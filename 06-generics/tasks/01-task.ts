@@ -9,3 +9,9 @@ type PaymentInfo = {
 // принимать любой тип для свойства currency.
 // 2. Доработайте GenericPaymentInfo таким образом
 // чтобы поумолчанию тип currency был string.
+
+type GenericPaymentInfo<Type = string> = {
+  id: string,
+  amount: number,
+  currency: Type,
+}

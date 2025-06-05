@@ -1,4 +1,4 @@
-let someData = 'test'
+let someData: any = 'test'
 
 // Укажите для переменной someData такой тип,
 // при котором код будет выполняться без ошибок

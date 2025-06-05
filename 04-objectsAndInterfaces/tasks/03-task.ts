@@ -3,9 +3,9 @@
 // один раз. А и ovnerName было опциональным
 
 interface ICar {
-  brand: string
-  model: string
-  hp: number
-  registrationNumber: string
-  ownerName: string
+  readonly brand: string,
+  readonly model: string,
+  hp: number,
+  registrationNumber: string,
+  ownerName?: string,
 }

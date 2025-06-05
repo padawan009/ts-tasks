@@ -10,3 +10,10 @@ const region = 161
 // переменных city и region был равен true,
 // запишите результат сравнения в переменную
 // isSameTypes
+
+let isSameTypes: boolean = typeof city === typeof country;
+console.log(isSameTypes);
+
+isSameTypes = typeof String(region) === typeof city;
+console.log(isSameTypes);
+

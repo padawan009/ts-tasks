@@ -22,3 +22,5 @@ interface IKitchen {
 // интерфейсы создайте тип KitchenDataType в котором
 // будут присутствовать все свойства IKitchen за
 // исключением тех, которые есть в IRoom
+
+type KitchenDataType = Omit<IKitchen, keyof IRoom>;

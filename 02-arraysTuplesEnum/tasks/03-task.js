@@ -1,7 +1,6 @@
-"use strict";
-let tasks;
-let month;
-let results;
+var tasks;
+var month;
+var results;
 // Определите в явном виде тип переменных таким образом,
 // чтобы код ниже работал корректно
 tasks = 'Новое задание';

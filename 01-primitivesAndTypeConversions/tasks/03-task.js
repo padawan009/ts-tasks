@@ -1,7 +1,6 @@
-"use strict";
-const city = 'London';
-const country = 'Great Britain';
-const region = 161;
+var city = 'London';
+var country = 'Great Britain';
+var region = 161;
 // 1. Сравните типы переменных city и country,
 // результат сравнения запишите в переменную
 // isSameTypes
@@ -10,3 +9,7 @@ const region = 161;
 // переменных city и region был равен true,
 // запишите результат сравнения в переменную
 // isSameTypes
+var isSameTypes = typeof city === typeof country;
+console.log(isSameTypes);
+isSameTypes = typeof String(region) === typeof city;
+console.log(isSameTypes);

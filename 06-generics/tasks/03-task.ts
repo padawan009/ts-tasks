@@ -2,6 +2,10 @@
 // ее дженерик таким образом чтобы код не вызывал
 // ошибок.
 
-function getLength<T>(arg: T): number {
+function getLength<T extends Length>(arg: T): number {
   return arg.length
+}
+
+type Length = {
+  length: number
 }

@@ -6,7 +6,9 @@ interface IPerson {
   isMarried: boolean
 }
 
-const somePerson: IPerson = {
+type Writable<myType> = { -readonly[keys in keyof myType]: myType[keys] };
+
+const somePerson: Writable<IPerson> = {
   firstName: 'Антон',
   lastName: 'Иванов',
   age: 33,

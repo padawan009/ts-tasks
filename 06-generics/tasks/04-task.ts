@@ -1,4 +1,4 @@
-function getPropertyValue(obj, key) {
+function getPropertyValue<Obj, Key extends keyof Obj>(obj: Obj, key: Key) {
   return obj[key]
 }
 

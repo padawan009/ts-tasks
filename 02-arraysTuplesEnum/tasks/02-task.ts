@@ -1,6 +1,6 @@
-const ages = []
-const answers = []
-const data = []
+const ages: (number | string)[] = [];
+const answers: (number | string | boolean)[] = []
+const data: (number | string | object | boolean)[] = [];
 
 // Определите в явном виде типы массивов таким
 // образом, чтобы код ниже работал корректно

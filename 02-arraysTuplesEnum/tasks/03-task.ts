@@ -1,6 +1,6 @@
-let tasks
-let month
-let results
+let tasks: string | string[];
+let month: string | number;
+let results: number | number[] | boolean | string 
 
 // Определите в явном виде тип переменных таким образом,
 // чтобы код ниже работал корректно

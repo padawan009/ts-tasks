@@ -91,7 +91,7 @@ JSX код использует такие же скобки для элемен
 достаточно запомнить простой лайфхак с запятой:
 
 ```ts
-const identity = <Type>(arg: Type): Type => {
+const identity = <Type,>(arg: Type): Type => {
   return arg
 }
 ```

@@ -18,7 +18,7 @@ exports.users = [
     },
 ];
 function logPerson(user) {
-    console.log(` - ${user.name}, ${user.age}`);
+    console.log(" - ".concat(user.name, ", ").concat(user.age));
 }
-console.log('Users:');
+console.log('Users:', exports.users);
 exports.users.forEach(logPerson);

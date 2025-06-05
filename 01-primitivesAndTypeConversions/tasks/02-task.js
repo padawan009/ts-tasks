@@ -1,5 +1,4 @@
-"use strict";
-let someData = 'test';
+var someData = 'test';
 // Укажите для переменной someData такой тип,
 // при котором код будет выполняться без ошибок
 someData = 334;

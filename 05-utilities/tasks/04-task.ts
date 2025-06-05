@@ -8,7 +8,7 @@ interface IUserData {
 // Измените тип аргумента data в функции formattedUserData
 // таким образом чтобы ее вызов ниже не вызывал ошибку
 
-function formattedUserData(data: IUserData): string {
+function formattedUserData(data: Partial<IUserData>): string {
   return `
       Имя: ${data.firstName};
       Фамилия: ${data.lastName};

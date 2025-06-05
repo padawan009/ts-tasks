@@ -21,3 +21,7 @@ type IShopListItem = {
   name: IShop['name']
   address: IShop['address']
 }
+
+type IShopListItem1 = Omit<IShop, keyof IShopListItem>;
+
+type IShopListItem2 = Pick<IShop, keyof IShopListItem>;

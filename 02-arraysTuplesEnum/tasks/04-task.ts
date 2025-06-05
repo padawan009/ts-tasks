@@ -1,4 +1,10 @@
-let cars: string | null = null
+let cars: keyof typeof CarNames | null = null
+
+enum CarNames {
+    mercedes = 'MERCEDES',
+    bmw = 'BMW',
+    tesla = 'TESLA'
+}
 
 // Используя Enum укажите переменной cars
 // такой тип при котором она может принимать
@@ -7,3 +13,5 @@ let cars: string | null = null
 // Код ниже должен вызвать ошибку
 
 cars = 'nissan'
+cars = 'bmw'
+cars = 'tesla'
